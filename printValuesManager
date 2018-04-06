@@ -1,5 +1,7 @@
 	/**
 	 * @author Peyman Ekhtiar
+	 * Language " JAVA "
+	 * SMARTGWT
 	 */
 public class helperUtilClient {   
 	public static void printValuesManager(Map map, boolean printValue){
