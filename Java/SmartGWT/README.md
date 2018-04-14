@@ -1,4 +1,10 @@
-# Some codes in different languages and technologies
+# valuesManagerUtilClient
 
-This is not a project. Here you can find some of the effective codes in different languages.
-These codes have been created during my experiences and working on different projects.
+you can find the key level and its value through of the code.
+
+ ```bash
+ 
+	
+valuesManagerUtilClient.printValuesManager((Map) getValuesManager().getValues(), true) 
+ ```
+
