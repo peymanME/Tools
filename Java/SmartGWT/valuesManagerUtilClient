@@ -3,7 +3,7 @@
 	 * Language " JAVA "
 	 * SMARTGWT
 	 */
-public class helperUtilClient {   
+public class valuesManagerUtilClient {   
 	public static void printValuesManager(Map map, boolean printValue){
 		int level = 0;
 		String space = "";
