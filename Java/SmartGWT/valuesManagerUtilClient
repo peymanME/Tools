@@ -35,6 +35,8 @@ public class valuesManagerUtilClient {
 			printOut(level, keyStr, space, map, false, null);
 			if (map.get(keyStr) instanceof String)
 				printOut(level, keyStr, space, map, printValue, (String) map.get(keyStr));
+			else if (map.get(keyStr) instanceof Boolean)
+				printOut(level, keyStr, space, map, printValue, map.get(keyStr).toString());
 			else if (map.get(keyStr) instanceof Integer)
 				printOut(level, keyStr, space, map, printValue, map.get(keyStr).toString());
 			else if (map.get(keyStr) instanceof Date)
