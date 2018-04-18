@@ -12,8 +12,11 @@ public class valuesManagerUtilClient {
 
 	private static void printOut(int level, String s, String space, Map map, boolean printValue, String value){
 		String type = "";
-		if (printValue && value != null) {
-			value = "  [ value = " + value + " ] ";
+		if (printValue) {
+			if (value != null)
+				value = "  [ value = " + value + " ] ";
+			else
+				value = "  [ value = null ] ";
 			System.out.println(  space + value  );
 			return;
 		}
