@@ -13,6 +13,10 @@ public class RecordUtilClient {
 		return Arrays.asList(keys).contains(key);
 	}
 	
+	public static boolean recordsCompareValues (Map newRecord, Map oldRecord){
+		return recordsCompareValues(newRecord, oldRecord, null);
+	}
+	
 	public static boolean recordsCompareValues (Map newRecord, Map oldRecord, String[] exceptKeys){
 		System.out.println( " Invoked recordsCompareValues" );
 		if(newRecord == null || oldRecord == null) return false;
