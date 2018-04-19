@@ -4,9 +4,15 @@
 	 * SMARTGWT
 	 */
 public class RecordUtilClient {   
+
+	private static Object[] getKeys (Map map){
+		return map.keySet().toArray();
+	}
+	
 	private static boolean isExceptKey(String[] keys, String key){
 		return Arrays.asList(keys).contains(key);
 	}
+	
 	public static boolean recordsCompareValues (Map newRecord, Map oldRecord, String[] exceptKeys){
 		System.out.println( " Invoked recordsCompareValues" );
 		if(newRecord == null || oldRecord == null) return false;

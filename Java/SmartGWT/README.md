@@ -1,4 +1,4 @@
-# valuesManagerUtilClient
+# ValuesManagerUtilClient
 
 You can find the key level and its value through of the code.
 ## Example:
@@ -7,6 +7,18 @@ You can find the key level and its value through of the code.
  ```bash
  
 	
-valuesManagerUtilClient.printValuesManager((Map) getValuesManager().getValues(), true) 
+		ValuesManagerUtilClient.printValuesManager((Map) getValuesManager().getValues(), true) 
  ```
 
+# RecordUtilClient
+
+	TO compare tow records.
+	
+## Example:
+	
+
+ ```bash
+ 
+	
+		PobytUtilClient.recordsCompareValues(recordNew.toMap(), recordOld.toMap())
+ ```
