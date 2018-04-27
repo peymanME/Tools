@@ -10,7 +10,7 @@ public class ValuesManagerUtilClient {
 		runRecursiveChecking( map, level, space, printValue);
 	}
 
-	private static void printOut(int level, String s, String space, Map map, boolean printValue, String value){
+	private static void printOut(int level, String key, String space, Map map, boolean printValue, String value){
 		String type = "";
 		if (printValue) {
 			if (value != null)
@@ -20,10 +20,10 @@ public class ValuesManagerUtilClient {
 			System.out.println(  space + value  );
 			return;
 		}
-		if (map != null && map.get(s) != null)
-			type = " type = " + map.get(s).getClass().getName();
+		if (map != null && map.get(key) != null)
+			type = " type = " + map.get(key).getClass().getName();
 
-		System.out.println( space +" "+ level +" " + s +  type );
+		System.out.println( space +" "+ level +" " + key +  type );
 	}
 
 	private static void runRecursiveChecking(Map map, int level, String space, boolean printValue){
