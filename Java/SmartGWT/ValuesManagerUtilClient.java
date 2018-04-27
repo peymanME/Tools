@@ -38,11 +38,10 @@ public class ValuesManagerUtilClient {
 			printOut(level, keyStr, space, map, false, null);
 			if (map.get(keyStr) instanceof String)
 				printOut(level, keyStr, space, map, printValue, (String) map.get(keyStr));
-			else if (map.get(keyStr) instanceof Boolean)
-				printOut(level, keyStr, space, map, printValue, map.get(keyStr).toString());
-			else if (map.get(keyStr) instanceof Integer)
-				printOut(level, keyStr, space, map, printValue, map.get(keyStr).toString());
-			else if (map.get(keyStr) instanceof Date)
+			else if (map.get(keyStr) instanceof Boolean ||
+					map.get(keyStr) instanceof Integer ||
+					map.get(keyStr) instanceof Date ||
+					map.get(keyStr) instanceof Character)
 				printOut(level, keyStr, space, map, printValue, map.get(keyStr).toString());
 			else if (map.get(keyStr) instanceof ArrayList)
 				runRecursiveArrayListChecking((ArrayList<Map>) map.get(keyStr), level, space, printValue);
