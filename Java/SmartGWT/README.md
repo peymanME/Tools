@@ -20,5 +20,5 @@ You can find the key level and its value through of the code.
  ```bash
  
 	
-		PobytUtilClient.recordsCompareValues(recordNew.toMap(), recordOld.toMap())
+		RecordUtilClient.recordsCompareValues(recordNew.toMap(), recordOld.toMap())
  ```
