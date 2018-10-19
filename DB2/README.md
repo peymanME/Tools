@@ -1,0 +1,9 @@
+# DB2
+
+
+ ```bash
+ 
+	
+		SELECT TBNAME,NAME,COLTYPE,LENGTH,SCALE FROM SYSIBM.SYSCOLUMNS WHERE NAME = 'Column name';
+ ```
+
