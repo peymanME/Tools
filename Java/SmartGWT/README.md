@@ -32,7 +32,7 @@ TO compare tow records.
 ``` bash
 	if (!UIHelperClient.is_EmptyOrNull(record.toMap(),"[PATH]"){    // PATH like student/name
 		// dosomthing
-		String [VARIABLE] = UIHelperClient.getValues();				// VARIABLE like name
+		String [VARIABLE] = (String)UIHelperClient.getValue();				// VARIABLE like name
 	}
 
 ```	
