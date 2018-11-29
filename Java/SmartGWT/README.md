@@ -23,13 +23,13 @@ You can find the key level and its value through of the code.
 		RecordUtilClient.recordsCompareValues(recordNew.toMap(), recordOld.toMap())
  ```
  
- Notes:
-        # Class DateTimeFormat: Formats and parses dates and times using locale-sensitive patterns in client side.
+#Notes:
+### Class DateTimeFormat: Formats and parses dates and times using locale-sensitive patterns in client side.
 		
 		
-		## Example:
-		```bash
+#### Example:
+```bash
 			DateTimeFormat fd = DateTimeFormat.getFormat("yyyy-MM-dd");        //to convert Date to String in client side, use format method of DateTimeFormat class.
 			String s  = fd.format(Date);
-		```
+```
 			
