@@ -18,10 +18,24 @@ TO compare tow records.
 ## Example:
 	
 
- ```bash
+```bash
  	
 		RecordUtilClient.recordsCompareValues(recordNew.toMap(), recordOld.toMap())
- ```
+```
+ 
+# UIHelperClient
+
+1. To check value with a specific path on the map in client side
+	
+## Example:
+
+``` bash
+	if (!UIHelperClient.is_EmptyOrNull(record.toMap(),"[PATH]"){    // PATH like student/name
+		// dosomthing
+		String [VARIABLE] = UIHelperClient.getValues();				// VARIABLE like name
+	}
+
+```	
  
 # Notes:
 

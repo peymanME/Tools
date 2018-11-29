@@ -78,4 +78,69 @@ public class UIHelperClient {
 			return fields;
 		return new String[]{};
 	}
+	
+	
+/**********************************************
+ *  To check value with a specific path on the map in client side
+ */
+	private static class CheckingValues {
+		private String[] ObjectNames;
+		private Map mainValues;
+		public boolean hasValue = true;
+		private Object value;
+		public Object getValue() {
+			return value;
+		}
+
+		CheckingValues(Map values, String path){
+			this.ObjectNames = path.split("/");
+			this.mainValues = values;
+			checkingValues();
+		}
+
+		private Object checkingValue(String objectName, Map objectMap){
+			if (objectMap == null) {
+				if (this.mainValues.get(objectName) != null)
+					return this.mainValues.get(objectName);
+			}
+			else {
+				if (objectMap.get(objectName)!= null)
+					return objectMap.get(objectName);
+				}
+			return null;
+		}
+		private void checkingValues(){
+			Object object = null;
+			int j = this.ObjectNames.length;
+			for (int i=0; i < j ;++i) {
+				String objectName = this.ObjectNames[i];
+				object = this.checkingValue(objectName, (Map)object);
+				if (object == null) {
+					this.hasValue = false;
+					break;
+				}
+			}
+			this.value = object;
+		}
+	}
+	private static CheckingValues _checkingValues;
+	public static boolean is_EmptyOrNull(Map values, String path){
+		_checkingValues = new CheckingValues(values, path);
+		if (_checkingValues.hasValue && _checkingValues.value instanceof String)
+			return ((String)_checkingValues.value).isEmpty();
+		return !_checkingValues.hasValue;
+	}
+	public static Object getValue(){
+		return _checkingValues.getValue();
+	}
+/**********************************************************************/	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
