@@ -4,11 +4,18 @@
  
 ## GLOBAL:
 
-To filter COLUMN_NAME on tables of database
+1. To filter COLUMN_NAME on tables of database
 
 ```bash 
 	
 	SELECT TBNAME,NAME,COLTYPE,LENGTH,SCALE FROM SYSIBM.SYSCOLUMNS WHERE NAME = [COLUMN_NAME];
+```
+
+2. To reorganize table of database 
+
+``` bash 
+
+	call sysproc.admin_cmd('reorg table [TABLE_NAME]');
 ```
 ## INSERT:
 
