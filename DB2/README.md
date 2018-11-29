@@ -1,13 +1,15 @@
 # DB2
-
-
- ```bash 
-	
-		SELECT TBNAME,NAME,COLTYPE,LENGTH,SCALE FROM SYSIBM.SYSCOLUMNS WHERE NAME = [COLUMN_NAME];
- ```
  
 # Notes:
  
+## GLOBAL:
+
+To filter COLUMN_NAME on tables of database
+
+```bash 
+	
+	SELECT TBNAME,NAME,COLTYPE,LENGTH,SCALE FROM SYSIBM.SYSCOLUMNS WHERE NAME = [COLUMN_NAME];
+```
 ## INSERT:
 
 Insert value into the table if it is not exist: 
