@@ -1,5 +1,7 @@
 # JAVA CORE
 
+- Java is always “pass by value”
+
 # Notes
 
 ## @Deprecated:
@@ -54,3 +56,17 @@ Final keyword has a numerous way to use:
 ```
 Other usage:
 4. When an anonymous inner class is defined within the body of a method, all variables declared final in the scope of that method are accessible from within the inner class
+
+## HashMap VS. Hashtable
+
+1. A Hashtable is synchronized and does not allow null keys or values.
+2. One of HashMap's subclasses is LinkedHashMap
+3. HashMap can be synchronized by Collections.synchronizeMap(hashMap)
+
+## finally
+
+Always not execute in a scenario such as an invocation of a “System.exit()” function, an infinite loop, or system crash, etc.
+
+## reflection
+
+Reflection is used to describe code that is able to inspect other code in the same system.
