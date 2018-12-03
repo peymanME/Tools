@@ -49,9 +49,9 @@ Classes should be open for extension but closed for modification.
 	public class Demo() {
 		public static void main(String[] args) {
 			Context context = new Context(new Dog()); 		// we inject the Dog
-			context.executeAnimal();  						// it will print “Execute Dog”;
-			context = new Context(new Cat());  				// we inject the Cat
-			context.executeAnimal();  						// it will print “Execute Cat”
+			context.executeAnimal();  				// it will print “Execute Dog”;
+			context = new Context(new Cat());  			// we inject the Cat
+			context.executeAnimal();  				// it will print “Execute Cat”
 		}
 	}
 	
