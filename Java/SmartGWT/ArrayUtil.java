@@ -7,7 +7,7 @@
 			return stringArray;
 		}
 	    	// To know a string exist in the string array.
-	    	public static boolean exist (String[] stringArrays, String yourString){
+		public static boolean exist (String[] stringArrays, String yourString){
 			return Arrays.asList(stringArrays).contains(yourString);
 		}
 	}
