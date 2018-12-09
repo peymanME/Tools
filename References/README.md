@@ -16,5 +16,7 @@
 [path_to_gwt_sdk]/webAppCreator -maven -noant -out hello com.example
 ```
 ## Spring Boot
-1. [Spring initializr](https://start.spring.io)
+[Spring initializr](https://start.spring.io)
 
+## JSON Web Token (JWT)
+[introduction](https://jwt.io/introduction/)
