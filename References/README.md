@@ -11,7 +11,10 @@
 1. [Versions GWT](http://www.gwtproject.org/versions.html)
 2. [google-web-toolkit](https://code.google.com/archive/p/google-web-toolkit/downloads)
 
-## Create GWT
+### Create GWT
 ``` bash
 [path_to_gwt_sdk]/webAppCreator -maven -noant -out hello com.example
 ```
+## Spring Boot
+1. [Spring initializr](https://start.spring.io)
+
