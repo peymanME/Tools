@@ -82,6 +82,7 @@ The method is present in java.util.Collections class. It is used to sort the ele
 A comparison function, which imposes a total ordering on some collection of objects. Comparators can be passed to a sort method (such as Collections.sort or Arrays.sort) to allow precise control over the sort order. Comparators can also be used to control the order of certain data structures (such as sorted sets or sorted maps), or to provide an ordering for collections of objects that don't have a natural ordering.
 
 ``` bash
+
 List<Entity> [listEntity] = entityDAO.findByParam(Restrictions.eq([field], [value]));
 
 Collections.sort([listEntity], new Comparator<[Entity]>() {
