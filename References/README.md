@@ -4,12 +4,19 @@
 [Maven 2.2.1](https://archive.apache.org/dist/maven/binaries/) 
 
 ## Libraries
-[Libraries.io](https://libraries.io/)
-[Maven 2.2.1](https://archive.apache.org/dist/maven/binaries/) 
+1. [Libraries.io](https://libraries.io/)
+2. [Maven 2.2.1](https://archive.apache.org/dist/maven/binaries/) 
 
 ## GWT
-[Versions GWT] (http://www.gwtproject.org/versions.html)
-[google-web-toolkit] (https://code.google.com/archive/p/google-web-toolkit/downloads)
+1. [Versions GWT](http://www.gwtproject.org/versions.html)
+2. [google-web-toolkit](https://code.google.com/archive/p/google-web-toolkit/downloads)
 
-## Create GWT 
-path_to_gwt_sdk/webAppCreator -maven -noant -out hello com.example
+### Create GWT
+``` bash
+[path_to_gwt_sdk]/webAppCreator -maven -noant -out hello com.example
+```
+## Spring Boot
+[Spring initializr](https://start.spring.io)
+
+## JSON Web Token (JWT)
+[introduction](https://jwt.io/introduction/)
