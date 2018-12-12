@@ -70,3 +70,25 @@ Always not execute in a scenario such as an invocation of a “System.exit()” 
 ## reflection
 
 Reflection is used to describe code that is able to inspect other code in the same system.
+
+## java.util.Collections
+
+This class consists exclusively of static methods that operate on or return collections. It contains polymorphic algorithms that operate on collections, "wrappers", which return a new collection backed by a specified collection, and a few other odds and ends.
+
+### Collections.sort(): 
+The method is present in java.util.Collections class. It is used to sort the elements present in the specified list of Collection in ascending order.
+
+### java.util.Comparator (interface):
+A comparison function, which imposes a total ordering on some collection of objects. Comparators can be passed to a sort method (such as Collections.sort or Arrays.sort) to allow precise control over the sort order. Comparators can also be used to control the order of certain data structures (such as sorted sets or sorted maps), or to provide an ordering for collections of objects that don't have a natural ordering.
+
+``` bash
+List<Entity> [listEntity] = entityDAO.findByParam(Restrictions.eq([field], [value]));
+
+Collections.sort([listEntity], new Comparator<[Entity]>() {
+					@Override
+					public int compare([Entity] o1, [Entity] o2) {
+						return (o1.getIdEntity() > o2.getIdEntity() ? -1 : (o1.getIdEntity() == o2.getIdEntity() ? 0 : 1));
+					}
+				});
+```				
+				
