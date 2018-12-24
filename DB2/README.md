@@ -42,6 +42,7 @@ A condition to filter a date with the specific format
 ```	
 
 ### Scrolling in SELECT
+
 ``` bash
  
 	CREATE OR REPLACE VARIABLE cono INTEGER;

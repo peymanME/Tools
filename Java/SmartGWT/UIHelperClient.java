@@ -21,8 +21,92 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class UIHelperClient {
+	/**********************************************
+	 * manualFormItemCreator
+	 */
+	private static manualFormItemCreator _manualFormItemCreator = null;
+	private static class manualFormItemCreator{
 
+		manualFormItemCreator(DefaultDynamicForm dynamicForm) {
+			this(dynamicForm, 1, 1);
+		}
+		manualFormItemCreator(DefaultDynamicForm dynamicForm, int columnNo, int formItemsInRowNo){
+			this.dynamicForm = dynamicForm;
+			this.formItems = dynamicForm.getOriginallyLocatedFields();
+			this.mainLayout = new HLayout();
+			this.columnNo = columnNo;
+			this.formItemsInRowNo = formItemsInRowNo;
+		}
+		private DynamicForm dynamicForm;
+		private HLayout mainLayout;
+		private FormItem[] formItems;
+		private int columnNo;
+		private int rowNo;
+		private int indexFormItem = 0;
+		private int formItemsInRowNo;
+		private List<DynamicForm> dynamicFormsList = new ArrayList<DynamicForm>();
 
+		private int countFormItems(){
+			return this.formItems.length;
+		}
+		private void createColumnsByFormItems (){
+			for(int i = 0; i < this.columnNo; ++i){
+				this.mainLayout.addMember(this.createRowsOfDynamicForm());
+			}
+		}
+		private HLayout setInLineTowFormItems (FormItem[] formItems) {
+			HLayout hLayout = new HLayout();
+			DynamicForm form = new DynamicForm();
+			form.setWidth100();
+			form.setNumCols(this.formItemsInRowNo);
+			form.setColWidths("10%", "20%");
+			if (formItems.length > 0) {
+				form.setFields(formItems);
+//            form.setDisabled(true);
+				this.dynamicFormsList.add(form);
+
+			}
+			hLayout.setHeight(40);
+//			hLayout.setID(String.valueOf(this.indexFormItem) );
+			hLayout.addMember(form);
+			this.mainLayout.getValuesManager().addMember(form);
+			return hLayout;
+		}
+		private VLayout createRowsOfDynamicForm(){
+			VLayout vLayout = new VLayout();
+			for(int i = 0; i < this.rowNo ; ++i){
+				List<FormItem> formItemDets;
+				if ((this.indexFormItem+1) == this.formItems.length ) {
+					formItemDets = new ArrayList<FormItem>();
+					formItemDets.add(this.formItems[this.indexFormItem]);
+				}
+				else
+					formItemDets = Arrays.asList(this.formItems).subList(this.indexFormItem, this.formItemsInRowNo+ this.indexFormItem);
+				this.indexFormItem += this.formItemsInRowNo;
+				vLayout.addMember(setInLineTowFormItems (formItemDets.toArray(new FormItem[0])));
+				if ((this.indexFormItem) == this.formItems.length )
+					return vLayout;
+			}
+			return vLayout;
+		}
+		public HLayout createMainLayour(){
+			ValuesManager valuesManager = new ValuesManager();
+			this.mainLayout.setValuesManager(valuesManager);
+			int formItemsNo = this.countFormItems();
+			this.rowNo = (formItemsNo + this.columnNo - 1 ) / this.columnNo;
+			this.createColumnsByFormItems();
+			return this.mainLayout;
+		}
+	}
+
+	public static HLayout createManuallyDynamicFrom(DynamicForm dynamicForm, int columnNo, int formItemsInRowNo) {
+		_manualFormItemCreator = new manualFormItemCreator(dynamicForm, columnNo, formItemsInRowNo)	;
+		return _manualFormItemCreator.createMainLayour();
+	}
+
+	/**********************************************
+	 * 
+	 */
 	private static String[] checkingToRequiredCanvasArray(DefaultVLayout layout, String[] listFields){
 		return checkingToRequiredCanvasArray(layout,null, listFields);
 	}

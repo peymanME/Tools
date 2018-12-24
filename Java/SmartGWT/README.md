@@ -36,7 +36,14 @@ TO compare tow records.
 	}
 
 ```	
- 
+2. To create dynamic form when you want to have constant locate for a form item(s) 
+
+## Example:
+``` bash 
+
+	UIHelperClient.createManuallyDynamicFrom([YourDynamicForm], [NumberOfColumnYouWant], [LayoutPatternOfFormItems]);
+	
+```
 # Notes:
 
 ### Class DateTimeFormat:
