@@ -1,4 +1,3 @@
 # Some codes in different languages and technologies
 
-This is not a project. Here you can find some of the effective codes in different languages.
-These codes have been created during my experiences and working on different projects.
+1. DB2(https://github.com/peymanME/Tools/tree/master/DB2)
