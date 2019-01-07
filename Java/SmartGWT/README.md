@@ -56,4 +56,31 @@ To convert Date to String in client side, use format method of DateTimeFormat cl
 	DateTimeFormat fd = DateTimeFormat.getFormat("yyyy-MM-dd");
 	String s  = fd.format(Date);	
 ```
+
+# PdfBuilderFromHTMLUtil
+
+If you are using iText libraries to create a PDF file from a html file, the class help you to change default font of pdf document to encoding font.
+
+## Example:
+``` bash 
+			Font font = FontFactory.getFont("./src/main/webapp/fonts/Serif.ttf", BaseFont.IDENTITY_H); // IDENTITY_H works for unicode
+			Paragraph p = new Paragraph();
+			p.setFont(font);
+			
+			Document document = new Document(PageSize.A4);
+			ServletOutputStream out = response.getOutputStream();
+
+			PdfWriter writer = PdfWriter.getInstance(document, out);
+
+
+			document.open();
+
+			PdfBuilderFromHTMLUtil pdfBuilderFromHTMLUtil = new PdfBuilderFromHTMLUtil();
+			pdfBuilderFromHTMLUtil.PdfBuilder([YOUR HTML], font, p);  // YOUR HTML
+			document.add(p);	
+			document.close();
+			out.flush();
+			out.close();
+	
+```
 			
