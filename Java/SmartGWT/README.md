@@ -62,25 +62,29 @@ To convert Date to String in client side, use format method of DateTimeFormat cl
 If you are using iText libraries to create a PDF file from a html file, the class help you to change default font of pdf document to encoding font.
 
 ## Example:
-``` bash 
-			Font font = FontFactory.getFont("./src/main/webapp/fonts/Serif.ttf", BaseFont.IDENTITY_H); // IDENTITY_H works for unicode
-			Paragraph p = new Paragraph();
-			p.setFont(font);
-			
-			Document document = new Document(PageSize.A4);
-			ServletOutputStream out = response.getOutputStream();
+``` bash
+		// rpc is RPCManager
+		rpc.doCustomResponse();
+		HttpServletResponse response = rpc.getContext().response;
 
-			PdfWriter writer = PdfWriter.getInstance(document, out);
+		Font font = FontFactory.getFont("./src/main/webapp/fonts/Serif.ttf", BaseFont.IDENTITY_H); // IDENTITY_H works for unicode
+		Paragraph p = new Paragraph();
+		p.setFont(font);
+		
+		Document document = new Document(PageSize.A4);
+		ServletOutputStream out = response.getOutputStream();
+
+		PdfWriter writer = PdfWriter.getInstance(document, out);
 
 
-			document.open();
+		document.open();
 
-			PdfBuilderFromHTMLUtil pdfBuilderFromHTMLUtil = new PdfBuilderFromHTMLUtil();
-			pdfBuilderFromHTMLUtil.PdfBuilder([YOUR HTML], font, p);  // YOUR HTML
-			document.add(p);	
-			document.close();
-			out.flush();
-			out.close();
+		PdfBuilderFromHTMLUtil pdfBuilderFromHTMLUtil = new PdfBuilderFromHTMLUtil();
+		pdfBuilderFromHTMLUtil.PdfBuilder([YOUR HTML], font, p);  // YOUR HTML
+		document.add(p);	
+		document.close();
+		out.flush();
+		out.close();
 	
 ```
 			
