@@ -45,3 +45,10 @@ If we use without "deprecation" like @SuppressWarnings()annotation, the compiler
 
 	XYZ.java uses or overrides a deprecated API.
 ```
+
+## POINTs
+
+When you want to use MYSQL database you should consider the following:
+``` bash
+spring.datasource.url = jdbc:mysql://localhost:3306/[DATABASE_NAME]?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+```
