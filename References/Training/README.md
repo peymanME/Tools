@@ -18,3 +18,6 @@
 
 ### 2. Concurrency
 #### [tutorials](http://tutorials.jenkov.com/java-concurrency/same-threading.html)
+
+### 3. Export IDE console log to external file
+[Tutorials](https://developers.perfectomobile.com/display/TT/Export+IDE+console+log+to+external+file)
