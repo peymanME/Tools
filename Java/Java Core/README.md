@@ -92,4 +92,4 @@ Collections.sort([listEntity], new Comparator<[Entity]>() {
 					}
 				});
 ```				
-				
+### A Java [class](https://jaimonmathew.wordpress.com/2011/01/29/simpleimageinfo/) to get image size without loading the whole data
