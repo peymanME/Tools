@@ -10,8 +10,12 @@
 	
 	SELECT TBNAME,NAME,COLTYPE,LENGTH,SCALE FROM SYSIBM.SYSCOLUMNS WHERE NAME = [COLUMN_NAME];
 ```
+2. To get list your tables
 
-2. To reorganize table of database 
+```bash
+ 	SELECT NAME FROM SYSIBM.SYSTABLES WHERE CREATOR = [YOUR_CREATOR];
+```
+3. To reorganize table of database 
 
 ``` bash 
 
