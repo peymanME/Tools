@@ -41,7 +41,12 @@ TO compare tow records.
 ## Example:
 ``` bash 
 
-	UIHelperClient.createManuallyDynamicFrom([YourDynamicForm], [NumberOfColumnYouWant], [LayoutPatternOfFormItems]);
+	hLayout = UIHelperClient.createManuallyDynamicFrom([YourDynamicForm], [NumberOfColumnYouWant], [LayoutPatternOfFormItems]);
+	
+	// set field to main form
+	for(DynamicForm defaultDynamicForm: hLayout.getValuesManager().getMembers())
+            valuesManager.addMember(defaultDynamicForm);
+
 	
 ```
 # Notes:

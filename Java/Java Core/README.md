@@ -92,4 +92,14 @@ Collections.sort([listEntity], new Comparator<[Entity]>() {
 					}
 				});
 ```				
-				
+### A Java [class](https://jaimonmathew.wordpress.com/2011/01/29/simpleimageinfo/) to get image size without loading the whole data
+
+### Console log to external file
+From your Java code:
+``` bash
+	import java.io.FileOutputStream;
+	import java.io.PrintStream;
+ 
+	System.setOut(new PrintStream(new FileOutputStream("output.txt")));
+	System.out.println("This is test output");
+```
