@@ -10,6 +10,7 @@ constructor() {  }
 
 
 public calcDate(date1: Date,date2: Date) {
+  // date2 > date1
     var diff = Math.floor(date2.getTime() - date1.getTime());
     var day = 1000 * 60 * 60 * 24;        
 
