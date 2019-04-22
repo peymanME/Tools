@@ -1,5 +1,7 @@
 # Linux > Centos
 
+# (Install Redmine on CentOS 7)[https://www.vultr.com/docs/how-to-install-redmine-on-centos-7]
+
 # Install Jenkins on CentOS
 
 ## Update CentOS 7 system
