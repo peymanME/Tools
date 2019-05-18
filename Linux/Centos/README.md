@@ -54,7 +54,6 @@ ps -eM
 
 ```
 
-# [Install Redmine on CentOS 7)[https://www.vultr.com/docs/how-to-install-redmine-on-centos-7]
 # [Show All Running Processes in Linux using ps/htop commands](https://www.cyberciti.biz/faq/show-all-running-processes-in-linux/)
 
 # Install Jenkins on CentOS
