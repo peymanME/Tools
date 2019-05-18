@@ -1,6 +1,61 @@
 # Linux > Centos
 
-# (Install Redmine on CentOS 7)[https://www.vultr.com/docs/how-to-install-redmine-on-centos-7]
+# Routine commands
+
+## apache is running
+``` bash
+pgrep apache
+```
+## restart and get status a service
+``` bash
+sudo systemctl restart [YOUR SERVICE]
+sudo systemctl status [YOUR SERVICE]
+```
+## restart and get status a service
+``` bash
+sudo firewall-cmd --permanent --zone=public --add-service=http
+sudo firewall-cmd --permanent --zone=public --add-service=https
+sudo firewall-cmd --reload
+---------------------------------------
+sudo ss -tulpn
+---------------------------------------
+ip a
+```
+## listening
+``` bash
+netstat -ntap | grep LISTEN | grep ":80"
+```
+## to give some clues
+``` bash
+iptables -nL
+```
+## change password
+```bash
+sudo passwd [USER]
+```
+## list process with the ps command
+``` bash
+ps -aux | less
+// show all processes on your server/workstation
+ps -A
+ps -e
+// to see every process except those running as root
+ps -U root -u root -N
+ps -U root -u root --deselect
+//  to display a tree of processes
+pstree
+// Get info about threads
+ps -eLf
+ps axms
+// Get security info
+ps -eo euser,ruser,suser,fuser,f,comm,label
+ps axZ
+ps -eM
+
+```
+
+# [Install Redmine on CentOS 7)[https://www.vultr.com/docs/how-to-install-redmine-on-centos-7]
+# [Show All Running Processes in Linux using ps/htop commands](https://www.cyberciti.biz/faq/show-all-running-processes-in-linux/)
 
 # Install Jenkins on CentOS
 
