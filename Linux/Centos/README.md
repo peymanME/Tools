@@ -1,6 +1,6 @@
 # Linux > Centos
 
-# Routine commands
+## [Install Redmine on CentOS 7](https://www.vultr.com/docs/how-to-install-redmine-on-centos-7)
 
 ## apache is running
 ``` bash
