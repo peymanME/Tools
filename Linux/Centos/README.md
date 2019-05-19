@@ -1,6 +1,10 @@
 # Linux > Centos
 
 ## [Install Redmine on CentOS 7](https://www.vultr.com/docs/how-to-install-redmine-on-centos-7)
+## [Installing and Configuring Pure-FTPD on RHEL / CentOS 7](https://www.alphahosting.com/blog/tips/installing-and-configuring-pure-ftpd-on-centos-7/)
+## [open a port in the firewall on CentOS or RHEL](http://ask.xmodulo.com/open-port-firewall-centos-rhel.html)
+## [Show All Running Processes in Linux using ps/htop commands](https://www.cyberciti.biz/faq/show-all-running-processes-in-linux/)
+## [CentOS: Create admin user](https://www.printsupportcenter.com/hc/en-us/articles/360000680145-CentOS-Create-admin-user)
 
 ## apache is running
 ``` bash
@@ -15,11 +19,17 @@ sudo systemctl status [YOUR SERVICE]
 ``` bash
 sudo firewall-cmd --permanent --zone=public --add-service=http
 sudo firewall-cmd --permanent --zone=public --add-service=https
+sudo firewall-cmd --permanent --add-port=21/tcp
+sudo firewall-cmd --permanent --add-service=ftp
 sudo firewall-cmd --reload
 ---------------------------------------
 sudo ss -tulpn
 ---------------------------------------
 ip a
+```
+## get information about Firewalld.
+``` bash
+sudo firewall-cmd --list-all
 ```
 ## listening
 ``` bash
@@ -54,7 +64,32 @@ ps -eM
 
 ```
 
-# [Show All Running Processes in Linux using ps/htop commands](https://www.cyberciti.biz/faq/show-all-running-processes-in-linux/)
+##  list all Unix group names
+``` bash 
+cut -d: -f1 /etc/group | sort
+```
+
+## delete directory
+```bash
+rm -f -r [DIR NAME]
+```
+
+## to check permissions of a specific directory
+```bash
+ls -ld [DIR NAME]
+```
+## to change the primary group a user is assigned
+```bash
+usermod -g [GROUP NAME] [USER NAME]
+```
+## add a User account to a group
+```bash
+usermod  -a -g [GROUP NAME] [USER NAME]
+```
+## change permission
+```bash
+chown [GROUP NAME]:[USER NAME] [PATH/FOLDER]
+```
 
 # Install Jenkins on CentOS
 
