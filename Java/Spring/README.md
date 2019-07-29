@@ -57,3 +57,14 @@ spring.datasource.url = jdbc:mysql://localhost:3306/[DATABASE_NAME]?useUnicode=t
 ``` bash
 	spring.jackson.serialization.fail-on-empty-beans=false
 ```
+
+## Redirect to external url
+
+```bash
+@RequestMapping("/goto")
+public RedirectView localRedirect() {
+    RedirectView redirectView = new RedirectView();
+    redirectView.setUrl("http://www.yahoo.com");
+    return redirectView;
+}
+```
