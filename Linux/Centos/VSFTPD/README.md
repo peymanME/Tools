@@ -76,6 +76,39 @@ Sample Output:
     Using binary mode to transfer files.
     ftp>
 ```
+## Allow a logged-in user to upload files to your FTP server.
+
+Limit FTP users to their own home directory. Find and adjust the entry to match the following:
+```bash
+ chroot_local_user=YES
+ allow_writeable_chroot=YES
+```
+**Note**: for test purposes, the allow_writeable_chroot=YES option will create a functioning FTP server that you can test and use. Some administrators advocate the use of the user_sub_token option for better security. Refer to the vsftpd [documentation](http://vsftpd.beasts.org/vsftpd_conf.html) for more information on this option.
+
+The vsftpd utility provides a way to create an approved user list. To manage users this way, find the userlist_enable entry, then edit the file to look as follows:
+```bash
+userlist_enable=YES
+userlist_file=/etc/vsftpd/user_list
+userlist_deny=NO
+```
+You can now edit the /etc/vsftpd/user_list file, and add your list of users. (List one per line.) The userlist_deny option lets you specify users to be included; setting it to yes would change the list to users that are blocked.
+
+Once you’re finished editing the configuration file, save your changes. Restart the vsftpd service to apply changes:
+```bash
+sudo systemctl restart vsftpd
+```
+Add the (sk) user to the userlist:
+```bash
+echo sk | sudo tee –a /etc/vsftpd/user_list
+```
+Create a directory for the (sk) user, and adjust permissions:
+```bash
+mkdir –p /home/testuser/ftp/upload
+chmod 550 /home/sk/ftp
+chmod 750 /home/sk/ftp/upload
+chown –R testuser: /home/sk/ftp
+```
+**Note**: This creates a home/sk directory for the new user, with a special directory for uploads. It sets permissions for uploads only to the /uploads directory.
 ## Remove VSFTPD
 ```bash
 yum remove vsftpd
