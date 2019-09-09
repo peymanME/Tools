@@ -104,7 +104,7 @@ From your Java code:
 	System.out.println("This is test output");
 ```
 
-## Get cuurent path
+## Get current path
 Using java.nio.file.Path and java.nio.file.Paths, you can do the following to show what Java thinks is your current path. This for 7 and on, and uses NIO.
 ```bash
     Path currentRelativePath = Paths.get("");
