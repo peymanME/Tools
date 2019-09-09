@@ -68,4 +68,10 @@ public RedirectView localRedirect() {
     return redirectView;
 }
 ```
+## Get Path of file 
+Using in controller
+```bash
+        ClassLoader classLoader = this.getClass().getClassLoader();
+        URL url = classLoader.getResource([Your/file/name]);
+```
 
