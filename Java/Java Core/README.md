@@ -103,3 +103,10 @@ From your Java code:
 	System.setOut(new PrintStream(new FileOutputStream("output.txt")));
 	System.out.println("This is test output");
 ```
+
+## Get cuurent path
+Using java.nio.file.Path and java.nio.file.Paths, you can do the following to show what Java thinks is your current path. This for 7 and on, and uses NIO.
+```bash
+    Path currentRelativePath = Paths.get("");
+    String s = currentRelativePath.toAbsolutePath().toString();
+```
