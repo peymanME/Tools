@@ -76,3 +76,17 @@ A condition to filter a date with the specific format
 	DROP PROCEDURE SCROLLING_PROC;
 	
 ```
+### Using Array 
+```bash
+    CREATE OR REPLACE TYPE idArray AS INTEGER ARRAY[100];
+    CREATE OR REPLACE VARIABLE ids idArray;
+    
+    SET ids = ARRAY[(SELECT [TABLE].[IDFIELD] FROM [TABLE] WHERE [CONDITION])];
+    
+    SELECT T.i as id FROM UNNEST(ids) as T(i);
+
+    DROP VARIABLE ids;
+    DROP TYPE idArray;
+
+```
+
