@@ -76,7 +76,8 @@ A condition to filter a date with the specific format
 	DROP PROCEDURE SCROLLING_PROC;
 	
 ```
-### Using Array 
+### Using Array
+ 
 ```bash
     CREATE OR REPLACE TYPE idArray AS INTEGER ARRAY[100];
     CREATE OR REPLACE VARIABLE ids idArray;
