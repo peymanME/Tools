@@ -18,7 +18,8 @@
 ## Spring Boot
 1. [Spring initializr](https://start.spring.io)
 2. [Common application properties](https://docs.spring.io/spring-boot/docs/1.2.x/reference/html/common-application-properties.html)
-3. [Spring Expression Language Guide](https://www.baeldung.com/spring-expression-language) 
+3. [Spring Expression Language Guide](https://www.baeldung.com/spring-expression-language)
+4. [Spring Boot application.properties file](http://dolszewski.com/spring/spring-boot-application-properties-file/) 
 
 ## JSON Web Token (JWT)
 [introduction](https://jwt.io/introduction/)
