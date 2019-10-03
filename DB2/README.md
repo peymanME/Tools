@@ -21,6 +21,11 @@
 
 	call sysproc.admin_cmd('reorg table [TABLE_NAME]');
 ```
+4. Print your variable in console
+```bash
+    SELECT [YOUR VARIABLE] FROM SYSIBM.SYSDUMMY1;
+```
+
 ## INSERT:
 
 Insert value into the table if it is not exist: 
