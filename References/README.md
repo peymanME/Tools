@@ -27,4 +27,5 @@
 ## All your code in one place
 1. [Markdown Cheatsheet](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md)
 
-
+## Java Script 
+1. [REQUIREJS API](https://requirejs.org/docs/api.html)
