@@ -21,3 +21,11 @@
 ```bash
     chmod 700 ~
 ```
+## Only root user to access
+
+```bash
+sudo chown -R root:root [YOUR DIR]
+
+sudo chmod 0750 [YOUR DIR]
+```
+
