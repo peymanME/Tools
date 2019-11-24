@@ -21,3 +21,7 @@
 
 ### 3. Export IDE console log to external file
 [Tutorials](https://developers.perfectomobile.com/display/TT/Export+IDE+console+log+to+external+file)
+
+## Linux
+### 1. Permission
+#### [How to change directory permissions in Linux](https://www.pluralsight.com/blog/it-ops/linux-file-permissions)
