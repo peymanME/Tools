@@ -14,6 +14,16 @@
 ```bash
     cut -d':' -f 1 /etc/group
 ```
+## How to change directory permissions in Linux
+To change directory permissions in Linux, use the following:
+```bash
+chmod +rwx filename to add permissions.
+chmod -rwx directoryname to remove permissions.
+chmod +x filename to allow executable permissions.
+chmod -wx filename to take out write and executable permissions.
+```
+Note that “r” is for read, “w” is for write, and “x” is for execute. 
+
 ## Users can't see my files
 
 ~ (your homedir) only accessible to yourself (the root user will also be able to access it, but no one else).
