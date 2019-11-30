@@ -4,6 +4,7 @@
 
 ### 1. [Using Hibernate Tools generate entity classes from Tables](https://o7planning.org/en/10125/using-hibernate-tools-generate-entity-classes-from-tables)
 ### 2. [Java Persistence/Criteria] (https://en.wikibooks.org/wiki/Java_Persistence/Criteria#Named_parameter_criteria_example)
+### 2. [ObjectDB 2.8 Developer's Guide] (https://www.objectdb.com/java/jpa)
 
 ## Free template Angular
 
