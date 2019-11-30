@@ -1,8 +1,9 @@
 # References / Training
 
-## Hibernate
+## Hibernate / JPA
 
 ### 1. [Using Hibernate Tools generate entity classes from Tables](https://o7planning.org/en/10125/using-hibernate-tools-generate-entity-classes-from-tables)
+### 2. [Java Persistence/Criteria] (https://en.wikibooks.org/wiki/Java_Persistence/Criteria#Named_parameter_criteria_example)
 
 ## Free template Angular
 
