@@ -33,4 +33,5 @@
 ## Admin templates dashboard
 1. [ng pi admin](https://github.com/bknds/ng-pi-admin)
 2. [ngx admin](https://github.com/akveo/ngx-admin)
-2. [coreui admin](https://coreui.io/)
+3. [coreui admin](https://coreui.io/)
+4. [SB Admin BS4 Angular 6](https://github.com/start-angular/SB-Admin-BS4-Angular-6)
