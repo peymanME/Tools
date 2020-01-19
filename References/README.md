@@ -30,5 +30,6 @@
 ## Java Script 
 1. [REQUIREJS API](https://requirejs.org/docs/api.html)
 
-## Angular Themes
-1. [admin UI](https://github.com/bknds/ng-pi-admin)
+## Admin templates dashboard
+1. [ng pi admin](https://github.com/bknds/ng-pi-admin)
+2. [ngx admin](https://github.com/akveo/ngx-admin)
