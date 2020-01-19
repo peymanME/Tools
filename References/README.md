@@ -35,3 +35,6 @@
 2. [ngx admin](https://github.com/akveo/ngx-admin)
 3. [coreui admin](https://coreui.io/)
 4. [SB Admin BS4 Angular 6](https://github.com/start-angular/SB-Admin-BS4-Angular-6)
+
+### Tools 
+1. [Angular Augury](https://augury.rangle.io/)
