@@ -8,7 +8,8 @@
 
 ## Angular
 
-###1. [Angular](https://appdividend.com/amp/2018/01/28/angular-input-output-tutorial-example-scratch/)
+### 1. [Appdividend](https://appdividend.com/amp/2018/01/28/angular-input-output-tutorial-example-scratch/)
+### 2. [Angular guide](https://angular.io/guide/universal)
 
 
 ## Eclipse
