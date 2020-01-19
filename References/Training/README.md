@@ -11,6 +11,9 @@
 ### 1. [Appdividend](https://appdividend.com/amp/2018/01/28/angular-input-output-tutorial-example-scratch/)
 ### 2. [Angular guide](https://angular.io/guide/universal)
 
+## Bootstrap
+
+### 1. [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/old/3.1.4/#/documentation)
 
 ## Eclipse
 ### TypeScript
