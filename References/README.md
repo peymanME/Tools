@@ -33,3 +33,4 @@
 ## Admin templates dashboard
 1. [ng pi admin](https://github.com/bknds/ng-pi-admin)
 2. [ngx admin](https://github.com/akveo/ngx-admin)
+2. [coreui admin](https://coreui.io/)
