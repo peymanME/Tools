@@ -12,7 +12,12 @@
     ```
 ### 3. Really two commands run in sequence will first build the library and then run the application
     ```bash 
-    mvn install && mvn spring-boot:run -pl application
+    mvn install && mvn spring-boot:run -pl application    
+    ```
+### 4. Debug command for GWT
+    ```bash 
+    mvn clean war:exploded gwt:debug
+   
     ```
 
 # Notes
