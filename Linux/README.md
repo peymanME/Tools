@@ -39,3 +39,7 @@ sudo chown -R root:root [YOUR DIR]
 sudo chmod 0750 [YOUR DIR]
 ```
 
+## Find directory 
+```bash
+    find / -type d -name "[dir-name-here]" 
+```
