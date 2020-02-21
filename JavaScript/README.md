@@ -6,7 +6,7 @@
  points.sort(function(a, b){return b-a});    // Sort the numbers in the array in descending order
  points.sort(function(a, b){return a-b});    // Sort the numbers in the array in ascending order
 ``` 
-## 
+## (synchronously) invoking the affected EventListeners in the appropriate order
 
 ```bash
 element.dispatchEvent(new Event('change'))
