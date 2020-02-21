@@ -32,3 +32,7 @@
 ## Linux
 ### 1. Permission
 #### [How to change directory permissions in Linux](https://www.pluralsight.com/blog/it-ops/linux-file-permissions)
+
+## Javascript
+### 1. Web APIs
+#### [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/API)
