@@ -1,5 +1,16 @@
 # Spring
 
+## JDBC unable to connect to mysql database
+```bash
+# ===============================
+# = DATA SOURCE MYSQL
+# ===============================
+spring.datasource.url = jdbc:mysql://localhost:3306/[YOUR DATABASE NAME]?autoReconnect=true&useSSL=false&serverTimezone=PDT
+spring.datasource.username = [YOUR USER]
+spring.datasource.password = [YOUR PASSWORD]
+
+```
+
 
 
 # Notes
