@@ -26,3 +26,7 @@
 ```bash
     tasklist | findstr '[PID]'
 ```
+## Check SMTP Port 587
+```bash
+    telnet localhost.tld 587
+```
