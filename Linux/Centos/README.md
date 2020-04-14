@@ -35,6 +35,14 @@ sudo firewall-cmd --list-all
 ``` bash
 netstat -ntap | grep LISTEN | grep ":80"
 ```
+
+# Restore SELinux
+``` bash
+sed -i -e 's/SELINUX=disabled/SELINUX=enforcing/g' /etc/sysconfig/selinux
+touch /.autorelabel
+reboot
+```
+
 ## to give some clues
 ``` bash
 iptables -nL
