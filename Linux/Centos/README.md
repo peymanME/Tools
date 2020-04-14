@@ -42,7 +42,10 @@ sed -i -e 's/SELINUX=disabled/SELINUX=enforcing/g' /etc/sysconfig/selinux
 touch /.autorelabel
 reboot
 ```
-
+# Network state
+```bash
+ nmtui
+```
 ## to give some clues
 ``` bash
 iptables -nL
