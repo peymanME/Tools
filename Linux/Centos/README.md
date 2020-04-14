@@ -23,6 +23,8 @@ sudo firewall-cmd --permanent --add-port=21/tcp
 sudo firewall-cmd --permanent --add-service=ftp
 sudo firewall-cmd --reload
 ---------------------------------------
+firewall-cmd --list-all --permanent
+---------------------------------------
 sudo ss -tulpn
 ---------------------------------------
 ip a
