@@ -27,7 +27,6 @@ ftpd_banner=Welcome to UNIXMEN FTP service.
 
 ## Add at the end of this  file ##
 use_localtime=YES
-### Step:3 Extract the downloaded file and set CATALINA_HOME variable
 ```
 Enable and start the vsftpd service:
 ```bash 
