@@ -30,6 +30,11 @@ sudo ss -tulpn
 
 ip a
 ```
+## A little more verbose and numeric list can be seen using the v and n options along with the L option
+```bash
+iptables --line -vnL
+```
+
 ## Close a port in IPtables
 ```bash
 sudo firewall-cmd --zone=public --remove-port=80/tcp
