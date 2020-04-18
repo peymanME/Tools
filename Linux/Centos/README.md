@@ -27,7 +27,14 @@ firewall-cmd --list-all --permanent
 ---------------------------------------
 sudo ss -tulpn
 ---------------------------------------
+
 ip a
+```
+## Close a port in IPtables
+```bash
+sudo firewall-cmd --zone=public --remove-port=80/tcp
+sudo firewall-cmd --runtime-to-permanent 
+sudo firewall-cmd --reload
 ```
 ## get information about Firewalld.
 ``` bash
