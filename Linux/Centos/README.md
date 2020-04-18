@@ -217,3 +217,7 @@ So, First remove the package recommended way (Even if you need to reinstall it).
 ```bash 
 iptables -A INPUT -i eth0 -p tcp --dport 22 -m state --state NEW -m recent --update --seconds 60 --hitcount 8 --rttl -j LOG --log-prefix "FW_DROPPED: "
 ```
+
+```bash 
+iptables -L -n
+```
