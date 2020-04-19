@@ -5,6 +5,7 @@
 ## [open a port in the firewall on CentOS or RHEL](http://ask.xmodulo.com/open-port-firewall-centos-rhel.html)
 ## [Show All Running Processes in Linux using ps/htop commands](https://www.cyberciti.biz/faq/show-all-running-processes-in-linux/)
 ## [CentOS: Create admin user](https://www.printsupportcenter.com/hc/en-us/articles/360000680145-CentOS-Create-admin-user)
+## [Iptables Essentials: Common Firewall Rules and Commands](https://www.digitalocean.com/community/tutorials/iptables-essentials-common-firewall-rules-and-commands)
 
 ## apache is running
 ``` bash
