@@ -39,4 +39,8 @@ UPDATE - The user account is allowed to update table rows.```
 ```bash 
 FLUSH PRIVILEGES;
 ```
+## List of hosts to access
+``` bash 
+SELECT host FROM mysql.user WHERE User = '[YOUR USER]';
+```
 
