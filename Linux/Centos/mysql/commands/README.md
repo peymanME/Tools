@@ -35,4 +35,8 @@ UPDATE - The user account is allowed to update table rows.```
 ``` bash
     GRANT ALL PRIVILEGES ON [YOUR_DATABASE].* TO '[YOUR_USER]'@'localhost';
 ```
+##  Reload the permissions
+```bash 
+FLUSH PRIVILEGES;
+```
 
