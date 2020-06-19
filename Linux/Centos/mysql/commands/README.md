@@ -18,6 +18,8 @@
 ## Display MySQL User Account Privileges
 
 ``` bash
+    SHOW GRANTS FOR '[YOUR_USER]';
+    --
     SHOW GRANTS FOR '[YOUR_USER]'@'localhost';
 ```
 The most commonly used privileges are:
