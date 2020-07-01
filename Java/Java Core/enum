@@ -1,0 +1,48 @@
+public enum [YOUR ENUM NAME] {
+    [YOUR ENUM]("[FIRST YOUR VALUE]","[SECOND YOUR VALUE]", ...),
+
+    private String [FIRST YOUR VALUE NAME];
+    private String [SECOND YOUR VALUE NAME];
+    .
+    .
+    .
+
+    [YOUR ENUM NAME] (String _[FIRST YOUR VALUE NAME], String _[SECOND YOUR VALUE NAME], ...){
+        [FIRST YOUR VALUE NAME] = _[FIRST YOUR VALUE NAME];
+        [SECOND YOUR VALUE NAME] = _[SECOND YOUR VALUE NAME];
+        .
+        .
+        .
+    }
+
+    public static [YOUR ENUM NAME] from[FIRST YOUR VALUE NAME](String v) {
+        for ([YOUR ENUM NAME] c: [YOUR ENUM NAME].values()) {
+            if (c.[FIRST YOUR VALUE NAME].equals(v)) {
+                return c;
+            }
+        }
+        throw new IllegalArgumentException(v);
+    }
+    public static [YOUR ENUM NAME] from[SECOND YOUR VALUE NAME](String v) {
+        for ([YOUR ENUM NAME] c: [YOUR ENUM NAME].values()) {
+            if (c.[SECOND YOUR VALUE NAME].equals(v)) {
+                return c;
+            }
+        }
+        throw new IllegalArgumentException(v);
+    }
+    .
+    .
+    .
+
+    public String get[FIRST YOUR VALUE NAME](){
+        return this.[FIRST YOUR VALUE NAME];
+    }
+    public int get[SECOND YOUR VALUE NAME](){
+        return this.[SECOND YOUR VALUE NAME]);
+    }
+    .
+    .
+    .
+
+}
