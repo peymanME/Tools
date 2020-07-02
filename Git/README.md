@@ -27,3 +27,7 @@
 8. >git push --hard origin master
    
 ```
+## remove cache
+```
+git rm --cached [FILENAME]
+```
