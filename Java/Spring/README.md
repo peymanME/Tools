@@ -100,3 +100,16 @@ These are valid formats for cron expressions:
 The pattern is:
     second, minute, hour, day, month, weekday
 
+## setting profile programmatically to command spring boot application
+```code
+        SpringApplication app = new SpringApplication([YOUR APP].class);
+        SimpleCommandLinePropertySource source = new SimpleCommandLinePropertySource(args);
+        if (!source.containsProperty("spring.profiles.active") &&
+                !System.getenv().containsKey("SPRING_PROFILES_ACTIVE")) {
+
+            app.setAdditionalProfiles("[YOUR PROFILE]");
+        }
+        ApplicationContext ctx = app.run( args);
+        Endpoint endpoint = ctx.getBean([YOUR BEAN].class);
+
+```
