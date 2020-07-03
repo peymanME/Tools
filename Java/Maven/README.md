@@ -19,7 +19,10 @@
     mvn clean war:exploded gwt:debug
    
     ```
-
+### 5. Run application by a profile in spring boot
+```bash 
+    mvn spring-boot:run -Drun.profiles=[YOUR PROFILE]
+``` 
 # Notes
 
 ## Dependency Scope
