@@ -29,6 +29,42 @@ $ docker rm [YOUR NAME CONTAINER]
 $ docker system prune
 ```
 
+## Run MySql5.7 on dicker
+### Step 1: Start Mysql container
+```bash
+$ docker run --name mysql57 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -d mysql/mysql-server:5.7
+```
+### Step 2: Check your container running
+```bash
+$ docker ps -a
+```
+### Step 3: Create a database
+```bash
+$ docker exec -it mysql57 bash
+```
+- #### Access the mysql container
+```bash
+    bash# mysql -h localhost -u root -p
+``` 
+- #### Create a user for out-of-container access
+```bash
+    mysql> CREATE USER '[YOUR USER]' IDENTIFIED BY '[YOUR PASSWORD]';
+    mysql> grant all on *.* to '[YOUR USER]'@'%' identified by '[YOUR PASSWORD]';
+    mysql> FLUSH PRIVILEGES;
+```
+- #### Create a database
+```bash
+    mysql> CREATE DATABASE [YOUR DATABASE NAME] CHARACTER SET utf8 COLLATE utf8_general_ci;
+```
+### OR Step 2: Check your container running
+```bash
+$ docker run --name mysql57 -p 3306:3306 \
+    -e MYSQL_ROOT_PASSWORD=1234 \
+    -e MYSQL_USER=[YOUR USER] \
+    -e MYSQL_PASSWORD=[YOUR PASSWORD] \
+    -e MYSQL_DATABASE=[YOUR DATABASE NAME] \
+    -d mysql/mysql-server:5.7
+```
 
 ----
 
