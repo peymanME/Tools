@@ -46,3 +46,14 @@ FLUSH PRIVILEGES;
 SELECT host FROM mysql.user WHERE User = '[YOUR USER]';
 ```
 
+## Change password
+```bash
+mysql> ALTER USER '[YOUR USER]'@'localhost' IDENTIFIED BY '[NEW USER PASSWORD]';
+mysql> FLUSH PRIVILEGES;
+```
+
+## Backup file
+```bash
+$ mysqlpump --database [YOUR DATABASE NAME] -u [YOUR USER] -p -h 'localhost'  > [YOUR/PATH/TO/FILE].sql 
+```
+
