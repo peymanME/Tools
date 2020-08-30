@@ -56,4 +56,40 @@ mysql> FLUSH PRIVILEGES;
 ```bash
 $ mysqldump [YOUR DATABASE NAME] -u [YOUR USER] -p -h 'localhost'  > [YOUR/PATH/TO/FILE].sql 
 ```
-
+# Changing the mysql root account password
+## Stop mysql:
+```bash
+$ systemctl stop mysqld
+```
+## Set the mySQL environment option:
+```bash
+$ systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
+```
+## Start mysql using the options you just set:
+```bash
+$ systemctl start mysqld
+```
+## Login as root:
+```bash
+$ mysql -u root
+```
+## Update the root user password with these mysql commands:
+```bash
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY '[YOUR PASSWORD]';
+ERROR 1290 (HY000): The MySQL server is running with the --skip-grant-tables option so it cannot execute this statement
+mysql> FLUSH PRIVILEGES;
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY '[YOUR PASSWORD]';
+mysql> FLUSH PRIVILEGES;
+```
+## Stop mysql:
+```bash
+$ systemctl stop mysqld
+```
+## Unset the mySQL envitroment option so it starts normally next time:
+```bash
+$ systemctl unset-environment MYSQLD_OPTS
+```
+## Start mysql normally:
+```bash
+$ systemctl start mysqld
+```
