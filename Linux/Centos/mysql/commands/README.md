@@ -54,6 +54,6 @@ mysql> FLUSH PRIVILEGES;
 
 ## Backup file
 ```bash
-$ mysqlpump --database [YOUR DATABASE NAME] -u [YOUR USER] -p -h 'localhost'  > [YOUR/PATH/TO/FILE].sql 
+$ mysqldump [YOUR DATABASE NAME] -u [YOUR USER] -p -h 'localhost'  > [YOUR/PATH/TO/FILE].sql 
 ```
 
