@@ -1,6 +1,7 @@
 # Docker
 * [Run postgres on dicker](https://github.com/peymanME/Tools/blob/master/Docker/README.md#run-postgres-on-dicker)
 * [Run MySql5.7 on dicker](https://github.com/peymanME/Tools/blob/master/Docker/README.md#run-mysql57-on-dicker)
+* [Run mongodb on dicker](https://github.com/peymanME/Tools/blob/master/Docker/README.md#run-mongodb-on-dicker)
 ---
 ## Run postgres on dicker
 ### Step 1: Pull postgres image
@@ -58,14 +59,15 @@ $ docker exec -it mysql57 bash
 ```bash
     mysql> CREATE DATABASE [YOUR DATABASE NAME] CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
-### OR Step 2: Check your container running
+## Run mongodb on dicker
+### Step 1: Pull mongo
 ```bash
-$ docker run --name mysql57 -p 3306:3306 \
-    -e MYSQL_ROOT_PASSWORD=1234 \
-    -e MYSQL_USER=[YOUR USER] \
-    -e MYSQL_PASSWORD=[YOUR PASSWORD] \
-    -e MYSQL_DATABASE=[YOUR DATABASE NAME] \
-    -d mysql/mysql-server:5.7
+$ docker pull mongo
+```
+### Step 2: Create a /mongodata directory on the host system
+### Step 3: Start the Docker container
+```bash
+$ docker run -it -v /data/db:/mongodata -p 27017:27017 --name mongodb -d mongo
 ```
 
 ----
