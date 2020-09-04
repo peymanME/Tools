@@ -1,5 +1,5 @@
 # Docker
-* [Run postgres on dicker](https://github.com/peymanME/Tools/tree/master/Docker#Run postgres on dicker)
+* [Run postgres on dicker](https://github.com/peymanME/Tools/tree/master/Docker)
 
 ## Run postgres on dicker
 ### Step 1: Pull postgres image
