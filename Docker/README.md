@@ -1,7 +1,7 @@
 # Docker
-*[Run postgres on dicker](https://github.com/peymanME/Tools/tree/master/Docker)
-*[Run MySql5.7 on dicker](https://github.com/peymanME/Tools/blob/master/Docker/README.md#run-mysql57-on-dicker)
-
+* [Run postgres on dicker](https://github.com/peymanME/Tools/blob/master/Docker/README.md#run-postgres-on-dicker)
+* [Run MySql5.7 on dicker](https://github.com/peymanME/Tools/blob/master/Docker/README.md#run-mysql57-on-dicker)
+---
 ## Run postgres on dicker
 ### Step 1: Pull postgres image
 ```bash
