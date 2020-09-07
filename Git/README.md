@@ -31,3 +31,7 @@
 ```
 git rm --cached [FILENAME]
 ```
+## Switched to a new branch
+```
+git checkout -b [NEW BRANCH]
+```
