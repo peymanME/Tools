@@ -15,6 +15,10 @@ Check Available Storage Space
 ```bash
 df -h
 ```
+Real swap partition or a swap file
+```bash
+swapon --show
+```
 
 ### Step 2: Create a Swap File
 This command will create a 4 gigabyte file.
