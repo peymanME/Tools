@@ -19,12 +19,12 @@
 ## Checking which application is using a ports
 
 ```bash
-    netstat -aon | findstr '[PORT_NUMBER]'
+    netstat -aon | find '[PORT_NUMBER]'
 ```
 ## Checking which application is using a pid
 
 ```bash
-    tasklist | findstr '[PID]'
+    tasklist | find '[PID]'
 ```
 ## Check SMTP Port 587
 ```bash
