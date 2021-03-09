@@ -26,10 +26,14 @@
 # Push master to the remote repo.
 8. >git push --hard origin master
    
-```
+---
+
 ## remove cache
-```
+bash```
 git rm --cached [FILENAME]
+```
+bash```
+git rm -r --cached .
 ```
 ## Switched to a new branch
 ```
