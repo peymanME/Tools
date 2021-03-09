@@ -29,10 +29,10 @@
 ---
 
 ## remove cache
-bash```
+```
 git rm --cached [FILENAME]
 ```
-bash```
+```
 git rm -r --cached .
 ```
 ## Switched to a new branch
