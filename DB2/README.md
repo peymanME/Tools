@@ -96,3 +96,11 @@ A condition to filter a date with the specific format
 
 ```
 
+### Using Database Fields
+SELECT CONCAT({field_1}, {field_2}) FROM {table_name};
+
+### Using String Expressions
+SELECT CONCAT('{string_1}', '{string_2}') FROM {table_name};
+
+### Using Database Fields and String Expressions
+SELECT CONCAT({field_1}, '{string_2}') FROM {table_name};
