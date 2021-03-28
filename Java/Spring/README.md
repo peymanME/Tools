@@ -15,6 +15,13 @@ spring.datasource.password = [YOUR PASSWORD]
 
 # Notes
 
+## @SpringBootTest
+* TestRestTemplate is only auto-configured when @SpringBootTest has been configured with a webEnvironment that means it starts the web container and listens for HTTP requests. For example:
+```java
+@SpringBootTest(webEnvironment=WebEnvironment.RANDOM_PORT)
+
+```
+
 ## @Autowired:
 
 This annotation allows Spring to resolve and inject collaborating beans into your bean.
