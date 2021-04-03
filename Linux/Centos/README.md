@@ -281,3 +281,8 @@ iptables -L -n
     find -regex ".*/core\.[0-9]+$" -delete
 ```
 
+# size of file 
+```bash
+ls -lh [path]
+```
+
