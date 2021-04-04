@@ -286,3 +286,8 @@ iptables -L -n
 ls -lh [path]
 ```
 
+# size of drive
+```bash
+df -h
+```
+
