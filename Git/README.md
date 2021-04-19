@@ -39,3 +39,7 @@ git rm -r --cached .
 ```
 git checkout -b [NEW BRANCH]
 ```
+## Set GIT_SSL_NO_VERIFY 
+```bash
+git config http.sslVerify "false"
+```
