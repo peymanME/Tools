@@ -45,3 +45,7 @@ git checkout -b [NEW BRANCH]
 ```
 git config http.sslVerify "false"
 ```
+or
+```
+git config --global http.sslVerify false
+```
