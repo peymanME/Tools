@@ -14,3 +14,7 @@ or
 ```
 flutter run -d chrome --profile
 ```
+-----
+```
+flutter pub add [dependency]
+```
