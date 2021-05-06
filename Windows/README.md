@@ -19,7 +19,7 @@
 ## Checking which application is using a ports
 
 ```bash
-    netstat -aon | find '[PORT_NUMBER]'
+    netstat -aon | findstr :[PORT_NUMBER]
 ```
 ## Checking which application is using a pid
 
