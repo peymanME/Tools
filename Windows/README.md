@@ -25,6 +25,10 @@ or
 ```
 netstat -aon | find /i "listening"
 ```
+or 
+```
+netstat -aon | find /i "listening" |find "port"
+```
 ## Checking which application is using a pid
 
 ```bash
