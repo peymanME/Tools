@@ -30,3 +30,7 @@
 ```bash
     telnet localhost.tld 587
 ```
+## There's a native GUI for Windows:
+```
+resmon.exe
+```
