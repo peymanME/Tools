@@ -21,3 +21,9 @@ group by kcu.table_schema,
          kcu.constraint_name
 order by kcu.table_schema,
          kcu.table_name;
+
+
+# Add day 
+```
+select current_timestamp + ( 2 || ' days')::interval;
+```
