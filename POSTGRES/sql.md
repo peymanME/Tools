@@ -1,3 +1,5 @@
+# All foreign keys
+```sql
 select kcu.table_schema || '.' ||kcu.table_name as foreign_table,
        '>-' as rel,
        rel_tco.table_schema || '.' || rel_tco.table_name as primary_table,
@@ -21,7 +23,7 @@ group by kcu.table_schema,
          kcu.constraint_name
 order by kcu.table_schema,
          kcu.table_name;
-
+```
 
 # Add day 
 ```
