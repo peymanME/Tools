@@ -92,4 +92,7 @@ If you are using iText libraries to create a PDF file from a html file, the clas
 		out.close();
 	
 ```
-			
+# Show console
+```java
+isc.showConsole()
+```
