@@ -43,3 +43,8 @@ sudo chmod 0750 [YOUR DIR]
 ```bash
     find / -type d -name "[dir-name-here]" 
 ```
+
+## Unpack
+```bash
+tar -C /myfolder -zxvf file_name.tar.gz
+```
