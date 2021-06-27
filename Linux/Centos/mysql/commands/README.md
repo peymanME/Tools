@@ -93,3 +93,17 @@ $ systemctl unset-environment MYSQLD_OPTS
 ```bash
 $ systemctl start mysqld
 ```
+
+## Disable ssl
+```bash
+$ sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+```cnf
+[mysqld]
+...
+
+skip_ssl
+# disable_ssl
+
+...
+```
