@@ -14,3 +14,7 @@ sudo apt install linux-headers-$(uname -r) build-essential dkms
 ```bash
 tar -xf archive.tar.gz -C /home/linuxize/files
 ```
+## Install notepad++
+```bash
+sudo snap install notepad-plus-plus
+```
