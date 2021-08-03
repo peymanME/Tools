@@ -23,3 +23,9 @@ sudo snap install notepad-plus-plus
 ```bash
 readlink -f $(which java)
 ```
+
+#nmap
+## Checking open port
+```bash
+sudo nmap -sS localhost
+```
