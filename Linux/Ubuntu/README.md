@@ -18,3 +18,8 @@ tar -xf archive.tar.gz -C /home/linuxize/files
 ```bash
 sudo snap install notepad-plus-plus
 ```
+
+## If the java command works, you can to find the location of the java by the following command:
+```bash
+readlink -f $(which java)
+```
