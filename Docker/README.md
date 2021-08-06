@@ -21,12 +21,22 @@ $ docker ps
 $ docker exec -it [YOUR NAME CONTAINER] bash
 ```
 
-----
+---
+
 ## Stop container
 ```bash
 $ docker stop [YOUR NAME CONTAINER]
 $ docker rm [YOUR NAME CONTAINER]
 ```
+## Remove image
+```bash
+$ docker rmi [IMAGE-ID]
+```
+## Remove container
+```bash
+$ docker rm [CONTAINER-ID]
+```
+
 ## To get rid of everything
 ```bash
 $ docker system prune
