@@ -35,7 +35,12 @@ $ docker system prune
 ## Run MySql5.7 on dicker
 ### Step 1: Start Mysql container
 ```bash
-$ docker run --name mysql57 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -d mysql/mysql-server:5.7
+$ docker run --name mysql57 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql/mysql-server:5.7
+```
+OR
+#### save on local
+```bash
+docker run --rm --name mysql57 -p 3306:3306 -v /[SOMEDIR_IN_YOUR_HOME]/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql/mysql-server:5.7
 ```
 ### Step 2: Check your container running
 ```bash
