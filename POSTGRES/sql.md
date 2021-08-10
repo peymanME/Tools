@@ -45,3 +45,7 @@ where
     and c.table_schema = [SCHEMA]
 group by t.table_name;
 ```
+#  max_connections
+```sql
+ALTER SYSTEM SET max_connections ='1000';
+```
