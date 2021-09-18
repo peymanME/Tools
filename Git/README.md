@@ -56,7 +56,7 @@ git config http.sslVerify "false"
 or
 ```
 git config --global http.sslVerify false
-
+```
 ## Global configuration 
 ```bash
 git config --global --edit
