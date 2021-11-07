@@ -48,3 +48,8 @@ sudo chmod 0750 [YOUR DIR]
 ```bash
 tar -C /myfolder -zxvf file_name.tar.gz
 ```
+
+## Show [USER] in the list as sudo
+```bash
+grep '^sudo' /etc/group
+```
