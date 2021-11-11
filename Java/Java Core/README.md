@@ -2,7 +2,14 @@
 
 - Java is always “pass by value”
 
-# Notes
+# Note
+
+## Command
+
+### Extracting war file
+```bash
+jar xvf test.war
+```
 
 ## @Deprecated:
 
