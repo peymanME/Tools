@@ -58,3 +58,7 @@ grep '^sudo' /etc/group
 ```bash
 sudo usermod -a -G groupname username
 ```
+## To grant the user permission to just the current directory
+```bash
+sudo chmod 775 directory_name
+```
