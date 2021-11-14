@@ -53,3 +53,8 @@ tar -C /myfolder -zxvf file_name.tar.gz
 ```bash
 grep '^sudo' /etc/group
 ```
+
+## To add a particular user to a particular group
+```bash
+sudo usermod -a -G groupname username
+```
