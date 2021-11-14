@@ -70,3 +70,9 @@ sudo netstat -tulpn | grep :443
 sudo ss -tulpn | grep LISTEN
 sudo ss -tulpn | grep ':22'
 ```
+
+## Listening on a port on Linux
+```bash
+sudo netstat -tulpn | grep :443
+sudo ss -tulpn | grep :443
+```
