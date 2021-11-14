@@ -62,3 +62,11 @@ sudo usermod -a -G groupname username
 ```bash
 sudo chmod 775 directory_name
 ```
+## Type any one of the following command to check if a port is in use on Linux
+```bash
+sudo lsof -i -P -n | grep LISTEN
+sudo netstat -tulpn | grep LISTEN
+sudo netstat -tulpn | grep :443
+sudo ss -tulpn | grep LISTEN
+sudo ss -tulpn | grep ':22'
+```
