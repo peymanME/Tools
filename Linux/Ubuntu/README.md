@@ -1,5 +1,9 @@
 # Ubuntu
 
+## Status of firewall
+```bash
+sudo ufw status
+```
 ## Open the port
 ```bash
 sudo ufw allow 443/tcp
