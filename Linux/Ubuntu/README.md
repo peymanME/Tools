@@ -1,4 +1,9 @@
-# Ubuntu 
+# Ubuntu
+
+## Open the port
+```bash
+sudo ufw allow 443/tcp
+```
 
 ## Checking Ubuntu Version From the Terminal
 
