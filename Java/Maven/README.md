@@ -20,9 +20,15 @@
    
     ```
 ### 5. Run application by a profile in spring boot
-    ```bash 
+    ``` bash 
         mvn spring-boot:run -Drun.profiles=[YOUR PROFILE]
     ``` 
+    
+### 6. install dependencies skip tests
+    ``` bash 
+        mvn install -DskipTests=false
+    ``` 
+    
 # Notes
 
 ## Dependency Scope
