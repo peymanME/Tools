@@ -42,6 +42,13 @@ mvn mvn install:install-file
 ```bash
 mvn -Dmaven.repo.local=${/my/local/repository/path} clean install
 ```
+In setting.xml file
+```xml
+<settings>
+    <localRepository>${C:your/maven_repository}</localRepository>
+</settings>    
+```
+
     
 # Notes
 
