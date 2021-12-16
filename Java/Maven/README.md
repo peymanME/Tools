@@ -26,9 +26,16 @@ mvn spring-boot:run -Drun.profiles=[YOUR PROFILE]
 ``` bash 
 mvn install -DskipTests=false
 ```    
-### 7. install in local repository
+### 7. install jar file in local repository
 ```bash
-mvn install -DskipTests -DlocalRepositoryPath=${YOUR.LOCAL.PATH}
+mvn mvn install:install-file
+    -Dfile=${YOUR-PACKAGE-version.jar}
+    -DgroupId=${YOUR.GROUP.ID}
+    -DartifactId=${YOUR.ARTIFACT.ID}
+    -Dversion=${VERSION>OF>PACKAGE}
+    -Dpackaging=jar
+    -DlocalRepositoryPath=${YOUR.LOCAL.PATH}
+    -DcreateChecksum=true
 ```
     
 # Notes
