@@ -2,36 +2,33 @@
 
 ## Important commands
 
-### 1. 
-    ```bash 
-    mvn dependency:tree -Dincludes=:spring*:
-    ```
+### 1.
+```bash 
+mvn dependency:tree -Dincludes=:spring*:
+```
 ### 2. 
-    ```bash 
-    mvn package -Dmaven.test.skip=true
-    ```
+```bash 
+mvn package -Dmaven.test.skip=true
+```
 ### 3. Really two commands run in sequence will first build the library and then run the application
-    ```bash 
-    mvn install && mvn spring-boot:run -pl application    
-    ```
+```bash 
+mvn install && mvn spring-boot:run -pl application    
+```
 ### 4. Debug command for GWT
-    ```bash 
-    mvn clean war:exploded gwt:debug
-   
-    ```
+```bash 
+mvn clean war:exploded gwt:debug
+```
 ### 5. Run application by a profile in spring boot
-    ``` bash 
-        mvn spring-boot:run -Drun.profiles=[YOUR PROFILE]
-    ``` 
-    
+``` bash 
+mvn spring-boot:run -Drun.profiles=[YOUR PROFILE]
+```     
 ### 6. install dependencies skip tests
-    ``` bash 
-        mvn install -DskipTests=false
-    ```
-    
+``` bash 
+mvn install -DskipTests=false
+```    
 ### 7. install in local repository
 ```bash
-  mvn install -DskipTests -DlocalRepositoryPath=${YOUR.LOCAL.PATH}
+mvn install -DskipTests -DlocalRepositoryPath=${YOUR.LOCAL.PATH}
 ```
     
 # Notes
