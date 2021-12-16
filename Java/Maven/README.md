@@ -27,7 +27,12 @@
 ### 6. install dependencies skip tests
     ``` bash 
         mvn install -DskipTests=false
-    ``` 
+    ```
+    
+### 7. install in local repository
+```bash
+  mvn install -DskipTests -DlocalRepositoryPath=${YOUR.LOCAL.PATH}
+```
     
 # Notes
 
