@@ -37,6 +37,11 @@ mvn mvn install:install-file
     -DlocalRepositoryPath=${YOUR.LOCAL.PATH}
     -DcreateChecksum=true
 ```
+
+### 8. Passing Local Repository Location via Command Line
+```bash
+mvn -Dmaven.repo.local=${/my/local/repository/path} clean install
+```
     
 # Notes
 
