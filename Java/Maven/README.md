@@ -28,7 +28,7 @@ mvn install -DskipTests=false
 ```    
 ### 7. install jar file in local repository [It works with version 2.3 and higher.]
 ```bash
-mvn mvn install:install-file
+mvn install:install-file
     -Dfile=${YOUR-PACKAGE-version.jar}
     -DgroupId=${YOUR.GROUP.ID}
     -DartifactId=${YOUR.ARTIFACT.ID}
