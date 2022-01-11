@@ -61,4 +61,7 @@ git config --global http.sslVerify false
 ```bash
 git config --global --edit
 ```
-
+## Get the Git commit count
+```bash
+git rev-list --all --count
+```
