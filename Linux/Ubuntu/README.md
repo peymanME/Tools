@@ -1,5 +1,10 @@
 # Ubuntu
 
+## remove divice 
+```bash
+$ sudo dpkg --remove --force-remove-reinstreq {PACKAGE-NAME}
+```
+
 ## check Ubuntu version
 ```bash
 $ hostnamectl
