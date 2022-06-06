@@ -1,5 +1,14 @@
 # Ubuntu
 
+## check Ubuntu version
+```bash
+$ hostnamectl
+```
+or
+```bash
+$ cat /etc/issue
+```
+
 ## Increase swap in 20.04
 ```bash
 $ sudo swapoff /swapfile  
