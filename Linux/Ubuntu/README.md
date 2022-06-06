@@ -1,5 +1,16 @@
 # Ubuntu
 
+## Increase swap in 20.04
+```bash
+$ sudo swapoff /swapfile  
+$ sudo rm  /swapfile
+$ sudo dd if=/dev/zero of=/swapfile bs=1M count={YOUR-AMOUNT}
+$ sudo chmod 600 /swapfile
+$ sudo mkswap /swapfile
+$ sudo swapon /swapfile
+```
+- restart ubuntu
+
 ## Check swap usage size and utilization in Linux
 ```bash
 $ swapon -s
