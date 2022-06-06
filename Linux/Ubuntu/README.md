@@ -1,5 +1,14 @@
 # Ubuntu
 
+## Check swap usage size and utilization in Linux
+```bash
+$ swapon -s
+```
+or
+```bash
+$ free -m
+```
+
 ## Status of firewall
 ```bash
 sudo ufw status
