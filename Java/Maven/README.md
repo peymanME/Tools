@@ -2,6 +2,11 @@
 
 ## Important commands
 
+### Update dependencies
+```bash
+$ mvn versions:use-latest-versions
+```
+
 ### 1.
 ```bash 
 mvn dependency:tree -Dincludes=:spring*:
