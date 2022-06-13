@@ -70,6 +70,7 @@ $ docker exec -it mysql57 bash
     mysql> grant all on *.* to '[YOUR USER]'@'%' identified by '[YOUR PASSWORD]';
     mysql> GRANT SELECT, INSERT ON [YOUR DATABASE].* TO '[YOUR USER]'@'[YOUR IP]';
     mysql> FLUSH PRIVILEGES;
+    mysql> SELECT * FROM mysql.user
 ```
 - #### Create a database
 ```bash
