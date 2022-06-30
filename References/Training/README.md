@@ -39,3 +39,4 @@
 
 
 ## [Flutter - Build and Release an Android App | App Signing](https://www.youtube.com/watch?v=g1fByAsqQRk)
+## [how to solve flutter certificate verify failed error while performing a post req](https://stackoverflow.com/questions/54285172/how-to-solve-flutter-certificate-verify-failed-error-while-performing-a-post-req)
