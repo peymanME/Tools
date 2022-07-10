@@ -1,4 +1,8 @@
 # Linux 
+## Kill the process by port
+```bash
+fuser -k 8080/tcp 
+```
 
 ## Checking ports
 
