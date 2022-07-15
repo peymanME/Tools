@@ -65,3 +65,7 @@ git config --global --edit
 ```bash
 git rev-list --all --count
 ```
+## Create SSh key
+```bash
+ssh-keygen -t rsa -b 4096 -C "[YOUR_EMAIL]"
+```
