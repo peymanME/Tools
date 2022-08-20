@@ -6,6 +6,12 @@ git revert [COMMIT HASH]
 git push
 ```
 
+## Remove last node
+```git
+git reset --hard [PREVIOUS COMMIT HASH]
+git push --force-with-lease
+```
+
 ## remove node:
 
 1. Checkout the last usable commit.
