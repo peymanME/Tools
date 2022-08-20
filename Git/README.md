@@ -13,6 +13,9 @@ git push --force-with-lease
 ```
 
 ## Remove a node
+
+### Method 1
+
 ```git 
    git checkout [PREVIOUS COMMIT HASH NODE IT WANTS TO BE DELETED]
    git checkout -b [NEW BRANCH NAME]
@@ -22,6 +25,14 @@ git push --force-with-lease
    git reset --hard [PREVIOUS COMMIT HASH NODE IT WANTS TO BE DELETED]
    git merge [NEW BRANCH NAME]
    git push --force-with-lease
+```
+
+### Method 2
+
+```git
+git rebase -i [PREVIOUS COMMIT HASH NODE IT WANTS TO BE DELETED]
+# In editor change pick to drop it wants to be deleted and save
+git push --force [REMOTE NAME] [BRANCH NAME]
 ```
 
 ## Edit comment of commit
