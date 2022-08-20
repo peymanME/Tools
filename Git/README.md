@@ -23,6 +23,14 @@ git push --force-with-lease
    git merge [NEW BRANCH NAME]
    git push --force-with-lease
 ```
+
+## Edit comment of commit
+```git 
+git rebase -i [PREVIOUS COMMIT HASH NODE IT WANTS TO BE EDITED]
+# In editor change pick to reword it wants to be edited and save
+# In editor modify the comment and save
+git push --force [REMOTE NAME] [BRANCH NAME]
+```
 ---
 
 ## remove cache
