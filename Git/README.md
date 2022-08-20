@@ -1,5 +1,11 @@
 # GIT
 
+## Revert a node
+```git
+git revert [COMMIT HASH]
+git push
+```
+
 ## remove node:
 
 1. Checkout the last usable commit.
