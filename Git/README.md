@@ -35,8 +35,8 @@ git rebase -i [PREVIOUS COMMIT HASH NODE IT WANTS TO BE DELETED]
 git push --force [REMOTE NAME] [BRANCH NAME]
 ```
 
-### Rebase options
-|   | 
+
+| ### Rebase options  | 
 | --- |
 | p, pick = use commit |
 | r, reword = use commit, but edit the commit message |
