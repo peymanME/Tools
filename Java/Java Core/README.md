@@ -117,3 +117,21 @@ Using java.nio.file.Path and java.nio.file.Paths, you can do the following to sh
     Path currentRelativePath = Paths.get("");
     String s = currentRelativePath.toAbsolutePath().toString();
 ```
+
+## Create generic instance
+```java 
+public interface DefaultAttributesValue {
+    static <T, E extends DefaultDomainAttribute<T>> E of(Class<E> clazz, T value) {
+        try {
+            if (value != null) {
+                Constructor<E> ctor = clazz.getConstructor(value.getClass());
+                return (ctor.newInstance(value));
+            }
+        } catch (NoSuchMethodException | InstantiationException | IllegalAccessException |
+                 InvocationTargetException ex) {
+            LoggerFactory.getLogger(clazz).debug("Error!! {}", ex.getMessage());
+        }
+        return null;
+    }
+}
+```
