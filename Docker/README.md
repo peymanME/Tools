@@ -111,3 +111,10 @@ $ docker run -it -v /data/db:/mongodata -p 27017:27017 --name mongodb -d mongo
 ```bash
 winpty docker exec -it [YOUR_NAME_CONTAINER] bash
 ```
+
+## Check docker enviroment
+```bash
+env
+```
+
+
