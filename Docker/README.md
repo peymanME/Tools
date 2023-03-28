@@ -90,11 +90,6 @@ $ docker pull mongo
 $ docker run -it -v /data/db:/mongodata -p 27017:27017 --name mongodb -d mongo
 ```
 
-## Run command on the win command 
-```bash
-winpty docker exec -it [YOUR_NAME_CONTAINER] bash
-```
-
 ----
 
 
@@ -111,3 +106,8 @@ winpty docker exec -it [YOUR_NAME_CONTAINER] bash
     $ sudo systemctl enable docker
     $ docker --version
 ``` 
+----
+## Run command on the win command 
+```bash
+winpty docker exec -it [YOUR_NAME_CONTAINER] bash
+```
