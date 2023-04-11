@@ -117,4 +117,11 @@ winpty docker exec -it [YOUR_NAME_CONTAINER] bash
 env
 ```
 
+## docker compose command 
+```bash
+docker-compose down
+docker-compose up -d
+docker-compose logs -f
+```
+
 
