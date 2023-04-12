@@ -49,3 +49,8 @@ group by t.table_name;
 ```sql
 ALTER SYSTEM SET max_connections ='1000';
 ```
+
+## Show tables
+```bash
+\dt
+```
