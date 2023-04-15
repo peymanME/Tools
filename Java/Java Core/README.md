@@ -135,3 +135,6 @@ public interface DefaultAttributesValue {
     }
 }
 ```
+
+## References
+- [Java Concurrency](https://www.vogella.com/tutorials/JavaConcurrency/article.html)
