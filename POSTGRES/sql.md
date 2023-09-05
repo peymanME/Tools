@@ -1,4 +1,9 @@
-# All foreign keys
+# Postgres
+## Show databases
+```sql
+SELECT datname FROM pg_catalog.pg_database;
+```
+## All foreign keys
 ```sql
 select kcu.table_schema || '.' ||kcu.table_name as foreign_table,
        '>-' as rel,
@@ -25,12 +30,12 @@ order by kcu.table_schema,
          kcu.table_name;
 ```
 
-# Add day 
+## Add day 
 ```
 select current_timestamp + ( 2 || ' days')::interval;
 ```
 
-#  All tables' all table columns
+##  All tables' all table columns
 ```sql
 select
     t.table_name,
@@ -45,7 +50,7 @@ where
     and c.table_schema = [SCHEMA]
 group by t.table_name;
 ```
-#  max_connections
+##  max_connections
 ```sql
 ALTER SYSTEM SET max_connections ='1000';
 ```
