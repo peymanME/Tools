@@ -3,6 +3,10 @@
 ```sql
 SELECT datname FROM pg_catalog.pg_database;
 ```
+Or 
+```sql
+SELECT "nspname" FROM "pg_catalog"."pg_namespace" ORDER BY "nspname";
+```
 ## All foreign keys
 ```sql
 select kcu.table_schema || '.' ||kcu.table_name as foreign_table,
