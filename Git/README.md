@@ -88,3 +88,7 @@ git rev-list --all --count
 ```bash
 ssh-keygen -t rsa -b 4096 -C "[YOUR_EMAIL]"
 ```
+## Find all change
+```bash
+git whatchanged --author=[EMAIL]  --since="30 days ago" --stat --output=[FILE_NAME].txt
+```
