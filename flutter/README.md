@@ -1,9 +1,14 @@
 # Flutter
 
 ## Add dependency
-```
+```cmd
 flutter pub add [dependency]
 ```
+## Test command 
+```cmd
+flutter test [TEST_FILE_PATH]
+```
+
 ---
 
 ## References
