@@ -92,3 +92,7 @@ ssh-keygen -t rsa -b 4096 -C "[YOUR_EMAIL]"
 ```bash
 git whatchanged --author=[EMAIL]  --since="30 days ago" --stat --output=[FILE_NAME].txt
 ```
+## Get list of config
+```bash
+ git config --list
+```
