@@ -1,5 +1,17 @@
 # GIT
 
+## List git branches
+* On remotes
+```git
+git for-each-ref --sort=committerdate refs/remotes/ --format='%(committerdate:
+short) %(refname:short)'
+```
+* On heads
+```git
+git for-each-ref --sort=committerdate refs/heads/ --format='%(committerdate:
+short) %(refname:short)'
+```
+
 ## Revert a node
 ```git
 git revert [COMMIT HASH]
