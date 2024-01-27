@@ -1,5 +1,8 @@
 # Ubuntu
-
+## To see concise and relevant output
+```bash
+sudo ss -ltn
+```
 ## To see the rules that are set
 ```bash
 sudo ufw status verbose
