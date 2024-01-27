@@ -1,5 +1,10 @@
 # Ubuntu
 
+## To see the rules that are set
+```bash
+sudo ufw status verbose
+```
+
 ## remove divice 
 ```bash
 $ sudo dpkg --remove --force-remove-reinstreq {PACKAGE-NAME}
