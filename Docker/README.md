@@ -3,6 +3,10 @@
 * [Run MySql5.7 on dicker](https://github.com/peymanME/Tools/blob/master/Docker/README.md#run-mysql57-on-dicker)
 * [Run mongodb on dicker](https://github.com/peymanME/Tools/blob/master/Docker/README.md#run-mongodb-on-dicker)
 ---
+##  Inspect the Docker network on your machine
+```bash
+docker network inspect bridge
+```
 ## Run postgres on dicker
 ### Step 1: Pull postgres image
 ```bash
