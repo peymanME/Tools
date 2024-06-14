@@ -1,4 +1,10 @@
 # Linux 
+
+## Change some attribute value on json file 
+```bash
+sed -i -E "s/\"Host\": \"$target\"/\"Host\": \"$replace\"/" $pgadmin
+```
+
 ## Kill the process by port
 ```bash
 fuser -k 8080/tcp 
