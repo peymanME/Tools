@@ -1,12 +1,21 @@
 # Flutter
 
-## Add dependency
+## Common flutter command
+### To add package
 ```cmd
-flutter pub add [dependency]
+ flutter pub add <package>
 ```
-## Test command 
+### To remove package
 ```cmd
-flutter test [TEST_FILE_PATH]
+ flutter pub remove <package>
+```
+### To add package to dev
+```cmd
+ flutter pub add --dev <package>
+```
+## To test project
+```cmd
+flutter test <test project path>
 ```
 
 ---
