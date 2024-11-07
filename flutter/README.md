@@ -13,6 +13,10 @@
 ```cmd
  flutter pub add --dev <package>
 ```
+### Set Up a New Package Project
+```flutter
+flutter create --template=package my_library_name
+```
 ## To test project
 ```cmd
 flutter test <test project path>
