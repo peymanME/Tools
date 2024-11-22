@@ -1,5 +1,11 @@
 # GIT
 
+## Undelete the local branch
+```
+git reflog  #find the [HASH] branch 
+git branch [YOUR-BRANCH] [HASH]
+```
+
 ## List git branches
 * On remotes
 ```git
