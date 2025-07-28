@@ -73,7 +73,7 @@ git push --force [REMOTE NAME] [BRANCH NAME]
 ```
 ---
 
-## remove cache
+## remove cache or tracking 
 ```
 git rm --cached [FILENAME]
 ```
