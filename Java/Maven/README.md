@@ -2,6 +2,11 @@
 
 ## Important commands
 
+### A single test in isolation
+```bash
+mvn test -Dtest=HealthyControllerInfraTest#shouldGreeting
+```
+
 ### Update dependencies
 ```bash
 $ mvn versions:use-latest-versions
